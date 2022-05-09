@@ -73,21 +73,18 @@ const productContainer = document.querySelector('.container-product');
 const cardLink = document.querySelector('.card__link');
 
 
-
 backBtn.addEventListener('click', function(){
  cardsContainer.classList.remove('hidden');
  productContainer.classList.add('hidden');
+ 
 })
-
-
-
-cardLink.addEventListener('click', function(){
-    cardsContainer.classList.add('hidden');
-    productContainer.classList.remove('hidden');
-})
-
 
 console.log(cardsContainer);
+
+function loadData(){
+
+    
+}
 
 data.forEach(el => {
  
@@ -121,6 +118,8 @@ data.forEach(el => {
     `
    
     cardsContainer.insertAdjacentHTML('beforeend', html);
+
 });
+
 
 
